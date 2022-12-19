@@ -8,6 +8,12 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
 `
+
+const Main = styled.div`
+    display: flex;
+    justify-content: center;
+    background: var(--colorPrimary);
+`
 const Wrapper = styled.div`
     background: var(--colorPrimary);
     color: white;
@@ -17,6 +23,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
+    width: 100%;
     max-width: 1440px;
 
 `;
@@ -49,4 +56,4 @@ const Link =styled(NavLink)`
 
 
 
-export { Container, Wrapper, Section, Logo, Link };
+export { Container, Wrapper, Section, Logo, Link, Main };
