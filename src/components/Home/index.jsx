@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from '../Generic/input'
+import { Input } from '../Generic/Input'
 import { Container } from './styled'
 
 export const Home = () => {
