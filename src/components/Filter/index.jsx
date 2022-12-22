@@ -7,7 +7,7 @@ export const Filter = () => {
   const countryRef = useRef();
   const regionRef = useRef();
   const cityRef = useRef();
-  const zipRef = useRef();
+  const zipRef = useRef()
 
   const roomsRef = useRef();
   const sortRef = useRef();

@@ -31,7 +31,7 @@ export const navbar = [
     //     path: '/signup', 
     //     private: false, 
     //     hidden: false, 
-    // },
+    // }
 
 ];
 
