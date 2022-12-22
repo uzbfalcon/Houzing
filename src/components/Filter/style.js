@@ -33,6 +33,6 @@ const Section = styled.div`
   justify-content: start;
   gap: 20px;
   margin-bottom: 20px;
-`;
+`
 
 export { Container, Icons, MenuWrapper, Section };
