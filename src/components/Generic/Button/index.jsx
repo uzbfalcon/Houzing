@@ -9,3 +9,4 @@ export const Button = ({children,type,onClick,width, height}) => {
   )
 }
 
+export default Button;
