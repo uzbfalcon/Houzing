@@ -19,6 +19,7 @@ export const Root = () => {
       <Route path='/' element={<Navigate to={'/home'}/>}/>
     </Routes>
     </BrowserRouter>
+
     
   )
 }
