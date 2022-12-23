@@ -3,7 +3,7 @@ import { ReactComponent as arrow } from '../../assets/icons/rightarrow.svg';
 
 const Container = styled.div`
   position: relative;
-  height: 471px;
+  /* height: 471px; */
 `;
 
 const Arrow = styled(arrow)`
