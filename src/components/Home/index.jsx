@@ -1,12 +1,16 @@
 import React from 'react'
-import { Input } from '../Generic/Input'
-import { Container } from './styled'
+import GenCarousel from '../Carousel'
+import HouseCard from '../HouseCard'
+import { Container,CardFlex } from './styled'
 
 export const Home = () => {
   return (
     <Container>
-      <h1>Home</h1>
-      <Input width={100} placeholder={'test'}/>
+     <GenCarousel/>
+     <CardFlex>
+     <HouseCard/>
+
+     </CardFlex>
     </Container>
   )
 }
