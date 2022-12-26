@@ -1,17 +1,13 @@
 import React from 'react'
-import GenCarousel from '../Carousel'
-import HouseCard from '../HouseCard'
-import CategoryCard from '../CategoryCard'
-import { Container,CardFlex } from './styled'
+import Carousel from '../Carousel'
+import Category from '../Category'
+import { Container } from './styled'
 
 export const Home = () => {
   return (
     <Container>
-     <GenCarousel/>
-     <CardFlex>
-     </CardFlex>
-     <HouseCard/>
-     <CategoryCard/>
+     <Carousel/>
+     <Category/>
 
     </Container>
   )
