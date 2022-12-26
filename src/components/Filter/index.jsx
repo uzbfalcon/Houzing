@@ -18,7 +18,7 @@ export const Filter = () => {
 
   const roomsRef = useRef();
   const sortRef = useRef();
-  const sizeRef = useRef();
+  // const sizeRef = useRef();
 
   const minPriceRef = useRef();
   const maxPriceRef = useRef();
