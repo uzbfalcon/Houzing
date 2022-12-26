@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import { Arrow, Blur, Container, Content, Img } from './style';
 import { Carousel } from 'antd';
 
-import img1 from '../../assets/img/home.png';
-import img2 from '../../assets/img/home.png';
+import img1 from '../../assets/img/photo1.jpg';
+import img2 from '../../assets/img/photo2.jpg';
 
 export const GetCarousel = () => {
   const slider = useRef();

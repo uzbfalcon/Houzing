@@ -33,6 +33,7 @@ const Section = styled.div`
   .active {
     color: #b8ff06;
   }
+  
 `;
 
 const Logo = styled(logoImg)`
@@ -47,6 +48,9 @@ const Link = styled(NavLink)`
   text-decoration: none;
   padding: 0 32px;
   color: #ffff;
+  :hover{
+    text-shadow:  2px 2px 2px blue;
+  }
 `;
 
 export { Container, Wrapper, Section, Logo, Link, Main };

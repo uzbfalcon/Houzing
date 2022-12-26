@@ -20,6 +20,7 @@ const Arrow = styled(arrow)`
   cursor: pointer;
   :hover {
     background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 10px 1px var(--colorPrimary);
   }
 `;
 
