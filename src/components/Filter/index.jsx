@@ -65,8 +65,14 @@ export const Filter = () => {
       <h1 className='subTitle'>Apartment info</h1>
       <Section>
         <Input ref={roomsRef} placeholder='Rooms' />
-        <Input ref={sizeRef} placeholder='Size' />
         <Input ref={sortRef} placeholder='Sort' />
+        {/* <Input ref={sizeRef} placeholder='Size' /> */}
+        <select name="" id="">
+          <option value="">test</option>
+          <option value="">test</option>
+          <option value="">test</option>
+          <option value="">test</option>
+        </select>
       </Section>
       <h1 className='subTitle'>Price</h1>
       <Section>
