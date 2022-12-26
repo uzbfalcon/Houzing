@@ -1,6 +1,7 @@
 import React from 'react'
 import GenCarousel from '../Carousel'
 import HouseCard from '../HouseCard'
+import CategoryCard from '../CategoryCard'
 import { Container,CardFlex } from './styled'
 
 export const Home = () => {
@@ -8,9 +9,10 @@ export const Home = () => {
     <Container>
      <GenCarousel/>
      <CardFlex>
-     <HouseCard/>
-
      </CardFlex>
+     <HouseCard/>
+     <CategoryCard/>
+
     </Container>
   )
 }

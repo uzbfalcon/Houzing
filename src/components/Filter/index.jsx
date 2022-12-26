@@ -26,7 +26,6 @@ export const Filter = () => {
   console.log(query.get('country'), 'params');
 
   const onChange = ({ target: { name, value } }) => {
-    // console.log(name, value);
     navigate(`${location?.pathname}${uzeReplace(name, value)}`);
   };
 
@@ -52,7 +51,7 @@ export const Filter = () => {
           onChange={onChange}
           defaultValue={query.get('city')}
           ref={cityRef}
-          name='city'
+          name='address'
           placeholder='City'
         />
         <Input
