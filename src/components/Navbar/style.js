@@ -32,6 +32,8 @@ const Section = styled.div`
   cursor: ${({ logo }) => logo && 'pointer'};
   .active {
     color: #b8ff06;
+    text-shadow:  1px 1px 3px  #b8ff06;
+
   }
   
 `;
@@ -49,7 +51,9 @@ const Link = styled(NavLink)`
   padding: 0 32px;
   color: #ffff;
   :hover{
-    text-shadow:  2px 2px 2px blue;
+    color: #0061DF;
+    text-shadow:  1px 1px 6px blue;
+    transition: 0.6s;
   }
 `;
 

@@ -9,7 +9,7 @@ export const GetCarousel = () => {
   const slider = useRef();
 
   const onChange = (currentSlide) => {
-    console.log(currentSlide);
+    // console.log(currentSlide);
   };
 
   const onMove = ({

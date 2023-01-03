@@ -23,7 +23,7 @@ export const Filter = () => {
   const minPriceRef = useRef();
   const maxPriceRef = useRef();
 
-  console.log(query.get('country'), 'params');
+  // console.log(query.get('country'), 'params');
 
   const onChange = ({ target: { name, value } }) => {
     navigate(`${location?.pathname}${uzeReplace(name, value)}`);

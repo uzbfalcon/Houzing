@@ -32,7 +32,7 @@ export const GenCarousel = () => {
       });
   }, []);
 
-  console.log(data);
+  // console.log(data);
   return (
     <Container>
       <Slider {...settings}>
