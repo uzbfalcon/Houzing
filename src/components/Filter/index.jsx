@@ -38,6 +38,7 @@ export const Filter = () => {
       .then((res) => {
         setData(res?.data || []);
       });
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -46,6 +47,7 @@ export const Filter = () => {
     );
     d?.name && setValue(d?.name);
     !query.get('category_id') && setValue('Select Category');
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location?.search, data]);
 
   const onChangeCategory = (category_id) => {
