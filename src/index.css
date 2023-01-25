@@ -69,3 +69,7 @@ body {
   color: black !important;
   font-size: 25px !important;
 };
+
+.slick-sots-bottom{
+  width: fit-content !important;
+}

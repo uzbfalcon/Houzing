@@ -5,20 +5,21 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   margin: auto;
-  padding: 96px 130px;
+  padding: 0px 130px;
   max-width: 1440px;
   width: 100%;
   :hover{
     cursor: pointer;
   }
+  margin-top: 16px;
 `;
+
 const Content = styled.div`
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  text-align: center;
-  /* margin-bottom: 32px; */
-  `;
+`
 
-export { Container,Content };
+
+export { Container, Content };

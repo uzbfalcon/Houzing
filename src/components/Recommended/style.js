@@ -11,14 +11,15 @@ const Container = styled.div`
   :hover{
     cursor: pointer;
   }
+  margin-top: 96px;
 `;
+
 const Content = styled.div`
+  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  text-align: center;
-  /* margin-bottom: 32px; */
-  `;
+`
 
-export { Container,Content };
+
+export { Container, Content };

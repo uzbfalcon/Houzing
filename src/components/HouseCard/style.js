@@ -10,11 +10,19 @@ const Container = styled.div`
   width: 100%;
   max-width: 380px;
   min-width: 330px;
-  height: 430px;
+  height: 100%;
+  min-height: 400px;
+  max-height: 460px;
 
-  filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
+  padding: ${({gap}) => gap && `${gap}px`};
+  background:white;
+  :hover{
+
+    filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
+  }
+  cursor: pointer;
 `;
 
 const Img = styled.img`
