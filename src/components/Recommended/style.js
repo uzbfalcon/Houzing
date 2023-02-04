@@ -11,7 +11,7 @@ const Container = styled.div`
   :hover{
     cursor: pointer;
   }
-  margin-top: 96px;
+  /* margin-top: 6px; */
 `;
 
 const Content = styled.div`
