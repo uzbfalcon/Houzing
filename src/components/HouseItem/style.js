@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Search } from "../../assets/icons/Search.svg";
+import { ReactComponent as share } from "../../assets/icons/share.svg";
 import { ReactComponent as love } from "../../assets/icons/love.svg";
 import { ReactComponent as bed } from "../../assets/icons/bed.svg";
 import { ReactComponent as bath } from "../../assets/icons/bath.svg";
@@ -73,7 +73,7 @@ Details.Title = styled.div`
 
 const Icons = styled.div``;
 
-Icons.Search = styled(Search)`
+Icons.Share = styled(share)`
   display: inline-block;
   background: #f6f8f9;
   padding: 2px;

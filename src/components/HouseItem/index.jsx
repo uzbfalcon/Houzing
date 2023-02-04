@@ -41,7 +41,7 @@ export const HouseItem = () => {
               </div>
             </Content>
             <Content flex>
-              <Icons.Search /> <Icons.Title>Share</Icons.Title>
+              <Icons.Share /> <Icons.Title>Share</Icons.Title>
               <Icons.Love /> <Icons.Title>Save</Icons.Title>
             </Content>
           </Section>
