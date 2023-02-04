@@ -1,10 +1,10 @@
 import { useId } from "react"
 
-const useuniqeId = () => {
+const UseuniqeId = () => {
     const id = useId()
     return id;
 
 
 }
 
-export default useuniqeId;
+export default UseuniqeId;
