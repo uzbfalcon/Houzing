@@ -114,7 +114,7 @@
 
 
 // 11-Goal )
-// ➤ GitHub Project section intro
+// ➤ GitHub Project section intro,
 // ➤ Favourite page completed
 // ➤ Like and Dislike implemented
 // ➤ React-Query,
