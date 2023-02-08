@@ -122,4 +122,4 @@
 // ➤ contextAPI implemented
 // ➤ Navbar register button fixed
 // ➤ Register Tabs => signin, signup
-// ➤ SignUp
+// ➤ SignUpp
