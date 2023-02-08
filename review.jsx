@@ -117,7 +117,7 @@
 // ➤ GitHub Project section intro
 // ➤ Favourite page completed
 // ➤ Like and Dislike implemented
-// ➤ React-Query
+// ➤ React-Query,
 // ➤ useQuery(dep, fetch, response)
 // ➤ contextAPI implemented
 // ➤ Navbar register button fixed
