@@ -116,7 +116,7 @@
 // 11-Goal )
 // ➤ GitHub Project section intro,
 // ➤ Favourite page completed
-// ➤ Like and Dislike implemented
+// ➤ Like and Dislike implemented,
 // ➤ React-Query,
 // ➤ useQuery(dep, fetch, response)
 // ➤ contextAPI implemented
