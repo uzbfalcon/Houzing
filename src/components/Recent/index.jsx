@@ -18,6 +18,7 @@ const settings = {
   dots: true,
 
   appendDots: (dots) => <h1> {dots} </h1>,
+  
 };
 
 export const Recommended = () => {

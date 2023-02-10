@@ -8,6 +8,7 @@ import Category from '../Category'
 import { Container } from './styled'
 
 export const Home = () => {
+  
   return (
     <Container>
       <Carousel />
