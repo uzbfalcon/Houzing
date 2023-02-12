@@ -10,6 +10,7 @@ const Container = styled.div`
   width: 100%;
   :hover{
     cursor: pointer;
+    background-color: white;
   }
 `;
 const Content = styled.div`

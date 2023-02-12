@@ -12,6 +12,10 @@ const Container = styled.div`
   filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
+    :hover {
+      color: red;
+      background-color: red;
+    }
 `;
 
 const Img = styled.img`
@@ -39,6 +43,14 @@ const Content = styled.div`
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
+  :hover {
+      /* background: rgba(255, 255, 255, 0.3); */
+    background: rgba(0, 0, 0, 0.1);
+
+      filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 4px 46px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 4px 45px rgba(0, 0, 0, 0.06));
+    }
 `;
 
 
@@ -50,10 +62,12 @@ const Blur = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
-
+  background: rgba(0, 0, 0, 0.1);
+  :hover{
+    background: rgba(0, 0, 100);
+  }
   border-radius: 3px;
-
+    
 `;
 
 const Icons = styled.div``

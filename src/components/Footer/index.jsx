@@ -15,7 +15,7 @@ export const Why = () => {
           </Content.Item>
         <Content.Item>
           <Icon.Tel/>
-          +9989000303000
+          +998910022001
           </Content.Item>
         <Content.Item>
           <Icon.Email/>
