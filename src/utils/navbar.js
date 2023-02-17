@@ -4,6 +4,7 @@ import Signin from '../pages/Signin'
 
 // import HomePage from '../pages/Home'
 // import Properties from '../pages/Properties'
+// 
 const Properties= React.lazy(()=> import('../pages/Properties')) 
 const HomePage= React.lazy(()=> import('../pages/Home')) 
 const HouseItem= React.lazy(()=> import('../pages/HouseItem')) 
