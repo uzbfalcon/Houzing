@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container,Content } from './style';
+import { Container, Content } from './style';
 import HouseCard from '../HouseCard';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
@@ -41,9 +41,9 @@ export const Recommended = () => {
       <Slider {...settings}>
         {data.map((value) => {
           return (
-            <HouseCard 
-            gap={20}
-            key={value.id}
+            <HouseCard
+              gap={20}
+              key={value.id}
               onClick={() => navigate(`/properties/${value.id}`)}
               data={value}
             />
