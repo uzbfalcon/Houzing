@@ -65,7 +65,7 @@ Icon.Location = styled(location)`
 Icon.Tel = styled(tel)`
     margin-right: 18px;
     width: 19px;
-   height: 19px;
+    height: 19px;
   
   & path {
     fill: #ffffff;

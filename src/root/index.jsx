@@ -7,7 +7,7 @@ export const Root = () => {
   return (
     <>
       <Routes>
-        <Route element={<Navbar />}>
+        <Route element={<Navbar />} style={{position: "sticky" , top: '0'}}>
           {navbar.map(({ path, element, id }) => {
             return <Route key={id} path={path} element={element} />;
           })}

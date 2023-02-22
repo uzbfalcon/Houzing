@@ -15,7 +15,7 @@ const settings = {
   speed: 700,
   arrows: true,
   adaptiveHeight: false,
-  dots: true,
+  // dots: true,
 
   appendDots: (dots) => <h1> {dots} </h1>,
 };

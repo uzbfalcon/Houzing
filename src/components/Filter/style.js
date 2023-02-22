@@ -13,7 +13,10 @@ const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: auto;
-
+    /* position: sticky;
+    top: 0;
+    z-index: 44;
+    position: relative; */
 `;
 
 const Icons = styled.div``;

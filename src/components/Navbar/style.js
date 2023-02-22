@@ -7,11 +7,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
+  
+  `;
 const Main = styled.div`
   display: flex;
   justify-content: center;
   background: var(--colorPrimary);
+  position: sticky;
+  top: 0;
+  z-index: 44;
 `;
 
 const Wrapper = styled.div`

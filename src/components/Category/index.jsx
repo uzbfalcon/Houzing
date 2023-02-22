@@ -16,6 +16,23 @@ const settings = {
   arrows: true,
   adaptiveHeight: false,
   dots: true,
+  // responsive: [
+  //         {
+  //           breakpoint: 600,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
+  //             initialSlide: 1,
+  //           },
+  //         },
+  //         {
+  //           breakpoint: 480,
+  //           settings: {
+  //             slidesToShow: 1,
+  //             slidesToScroll: 1,
+  //           },
+  //         },
+  //       ],
 
   appendDots: (dots) => <h1> {dots} </h1>,
 };
@@ -43,7 +60,7 @@ export const GenCarousel = () => {
         {data.map((value) => {
           return (
             <CategoryCard
-            key={value.id}
+              key={value.id}
               onClick={() => navigate(`/properties?category_id=${value.id}`)}
               data={value}
             />

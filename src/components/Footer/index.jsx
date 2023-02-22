@@ -2,8 +2,6 @@ import React from 'react';
 import { Container, Content, Icon } from './style';
 
 
-
-
 export const Why = () => {
   return (
     <Container>
