@@ -30,7 +30,7 @@ export const Filter = () => {
   const onChange = ({ target: { name, value } }) => {
     navigate(`${location?.pathname}${uzeReplace(name, value)}`);
   };
-  
+
 
   useEffect(() => {
     fetch(`${url}/categories/list`)
@@ -93,7 +93,7 @@ export const Filter = () => {
       <Section>
         <Input name='room' onChange={onChange} ref={roomsRef} placeholder='Rooms' />
 
-        <SelectAnt defaultValue={query.get('Sort') ||' Select Sort'} onChange={onChangeSort}>
+        <SelectAnt defaultValue={query.get('Sort') || ' Select Sort'} onChange={onChangeSort}>
           <SelectAnt.Option value={''}>Select Sort</SelectAnt.Option>
           <SelectAnt.Option value={'asc'}>O'suvchi</SelectAnt.Option>
           <SelectAnt.Option value={'desc'}>Kamayuvchi</SelectAnt.Option>
@@ -102,12 +102,12 @@ export const Filter = () => {
         <SelectAnt value={value} onChange={onChangeCategory}>
           <SelectAnt.Option value={''}>Select Category</SelectAnt.Option>
           {data.map((value) => {
-              return (
-                <SelectAnt.Option key={value.id} value={value?.id}>
-                  {value?.name}
-                </SelectAnt.Option>
-              )
-            })};
+            return (
+              <SelectAnt.Option key={value.id} value={value?.id}>
+                {value?.name}
+              </SelectAnt.Option>
+            )
+          })};
         </SelectAnt>
       </Section>
       <h1 className='subTitle'>Price</h1>
