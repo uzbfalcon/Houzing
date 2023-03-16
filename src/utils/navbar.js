@@ -1,6 +1,7 @@
 import React  from "react";
 import useId from '../hooks/useId';
 import Signin from '../pages/Signin'
+import Favourite from '../pages/Favourite'
 
 // import HomePage from '../pages/Home'
 // import Properties from '../pages/Properties'
@@ -42,6 +43,14 @@ export const navbar = [
         title: 'Sign in', 
         path: '/signin', 
         private: false, 
+        hidden: true, 
+    },
+    ,
+    { id: useId, 
+        element: <Favourite/>, 
+        title: 'Favourite', 
+        path: '/Favourite', 
+        private: true, 
         hidden: true, 
     },
     // { id: useId, 
