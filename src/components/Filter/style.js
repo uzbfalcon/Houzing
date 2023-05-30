@@ -17,6 +17,15 @@ const Container = styled.div`
     top: 0;
     z-index: 44;
     position: relative; */
+    @media screen and (max-width: 685px) {
+      padding: 0;
+      max-width: 685px;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 0;
+      max-width: 380px;
+    }
+
 `;
 
 const Icons = styled.div``;
