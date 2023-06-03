@@ -13,6 +13,8 @@
     transform: translateX(100%);
     color: red;
     font-size: 23px;
+    text-shadow: 1px 1px 4px  red;
+    letter-spacing: 1px;
     -moz-animation: my-animation 20s linear infinite;
     -webkit-animation: my-animation 20s linear infinite;
     animation: my-animation 20s linear infinite;
