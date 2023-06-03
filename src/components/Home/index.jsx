@@ -6,11 +6,13 @@ import Recent from '../Recent'
 import Banner from '../Banner'
 import Category from '../Category'
 import { Container } from './styled'
+import Error from '../error'
 
 export const Home = () => {
   
   return (
     <Container>
+      <Error/>
       <Carousel />
       <Recommmended />
       <Why />

@@ -4,6 +4,8 @@ import HouseCard from '../HouseCard';
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useRequest from '../../hooks/useRequest';
+import './style.css'
+import Error from '../error';
 
 // const { REACT_APP_BASE_URL: url } = process.env;
 
@@ -28,6 +30,7 @@ export const Properties = () => {
 
   return (
     <React.Fragment>
+      <Error/>
       <div className="title">Properties</div>
       <div className="info" style={{ textAlign: 'center' }}>
       Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
