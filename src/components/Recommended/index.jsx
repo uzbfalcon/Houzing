@@ -39,7 +39,7 @@ export const Recommended = () => {
         <span className="info">Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</span>
       </Content>
       <Slider {...settings}>
-        {data.map((value) => {
+        {/* {data.map((value) => {
           return (
             <HouseCard
               gap={20}
@@ -48,7 +48,13 @@ export const Recommended = () => {
               data={value}
             />
           );
-        })}
+        })} */}
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
       </Slider>
     </Container>
   );

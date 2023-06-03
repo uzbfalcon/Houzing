@@ -57,7 +57,7 @@ export const GenCarousel = () => {
         <div className="info">Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</div>
       </Content>
       <Slider {...settings}>
-        {data.map((value) => {
+        {/* {data.map((value) => {
           return (
             <CategoryCard
               key={value.id}
@@ -65,7 +65,12 @@ export const GenCarousel = () => {
               data={value}
             />
           );
-        })}
+        })} */}
+        <CategoryCard/>
+        <CategoryCard/>
+        <CategoryCard/>
+        <CategoryCard/>
+        <CategoryCard/>
       </Slider>
     </Container>
   );

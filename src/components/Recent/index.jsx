@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container,Content } from './style';
+import { Container, Content } from './style';
 import HouseCard from '../HouseCard';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
@@ -18,7 +18,7 @@ const settings = {
   dots: false,
 
   appendDots: (dots) => <h1> {dots} </h1>,
-  
+
 };
 
 export const Recommended = () => {
@@ -40,16 +40,23 @@ export const Recommended = () => {
         <span className="info">Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</span>
       </Content>
       <Slider {...settings}>
-        {data.map((value) => {
+        {/* {data.map((value) => {
           return (
-            <HouseCard 
-            gap={20}
-            key={value.id}
+            <HouseCard
+              gap={20}
+              key={value.id}
               onClick={() => navigate(`/properties/${value.id}`)}
               data={value}
             />
           );
-        })}
+        })} */}
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
+        <HouseCard gap={20}/>
       </Slider>
     </Container>
   );
