@@ -75,6 +75,7 @@ export const Properties = () => {
         <HouseCard/>
         <HouseCard/>
         <HouseCard/>
+        <HouseCard/>
       </Container>
     </React.Fragment>
   );
