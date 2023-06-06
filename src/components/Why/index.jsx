@@ -20,17 +20,17 @@ export const Why = () => {
         <Content>
           <Icon.House />
           <div className="subTitle">Wide Renge Of Properties</div>
-          <div className="info">With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
+          <div className="info">With over 2 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
         </Content>
         <Content>
           <Icon.Calculator />
           <div className="subTitle">Financing Made Easy</div>
-          <div className="info">With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
+          <div className="info">With over 3 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
         </Content>
         <Content>
           <Icon.Maps />
           <div className="subTitle">See Neighborhoods</div>
-          <div className="info">With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
+          <div className="info">With over 4 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
         </Content>
       </Wrapper>
     </Container>
