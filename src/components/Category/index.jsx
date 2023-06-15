@@ -22,6 +22,7 @@ const settings = {
       settings: {
         slidesToShow: 1,
         arrows: false,
+        dots:true,
       },
     },
     {
@@ -29,6 +30,8 @@ const settings = {
       settings: {
         slidesToShow: 2,
         arrows: false,
+        dots:true,
+
       },
     },
   ],

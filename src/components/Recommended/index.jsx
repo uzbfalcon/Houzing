@@ -21,12 +21,14 @@ const settings = {
       settings: {
         slidesToShow: 1,
         arrows: false,
+        dots: true,
       },
     },
     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 2,
+        dots: true,
       },
     },
   ],
