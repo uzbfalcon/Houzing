@@ -13,19 +13,20 @@ const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: auto;
-    /* position: sticky;
-    top: 0;
-    z-index: 44;
-    position: relative; */
-    @media screen and (max-width: 685px) {
-      padding: 0;
-      max-width: 685px;
-    }
-    @media screen and (max-width: 380px) {
-      padding: 0;
-      max-width: 380px;
-    }
+  justify-content: center;
 
+  @media screen and (max-width: 685px) {
+    padding: 0;
+    max-width: 685px;
+  flex-wrap: wrap;
+
+  }
+
+  @media screen and (max-width: 380px) {
+    padding: 0;
+    max-width: 380px;
+    flex-wrap: wrap;
+  }
 `;
 
 const Icons = styled.div``;
@@ -45,6 +46,7 @@ const MenuWrapper = styled.div`
   background: white;
   border: 1px solid #e6e9ec;
 `;
+
 const Section = styled.div`
   display: flex;
   justify-content: start;
@@ -63,6 +65,6 @@ const SelectAnt = styled(Select)`
     display: flex !important;
     align-items: center !important;
   }
-`
+`;
 
-export { Container, Icons, MenuWrapper, Section,SelectAnt };
+export { Container, Icons, MenuWrapper, Section, SelectAnt };

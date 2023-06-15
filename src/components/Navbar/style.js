@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -7,8 +8,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-  `;
+`;
+
 const Main = styled.div`
   display: flex;
   justify-content: center;
@@ -28,18 +29,34 @@ const Wrapper = styled.div`
   font-size: 16px;
   width: 100%;
   max-width: 1440px;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    padding: 10px;
+    height: auto;
+
+    .center {
+      margin: auto;
+    }
+  }
+  
 `;
 
 const Section = styled.div`
   display: flex;
   align-items: center;
   cursor: ${({ logo }) => logo && 'pointer'};
+  margin-right: 20px;
+
   .active {
     color: #b8ff06;
-    text-shadow:  1px 1px 3px  #b8ff06;
-
+    text-shadow: 1px 1px 3px #b8ff06;
   }
-  
+
+  @media (max-width: 768px) {
+    margin: 10px 0;
+    ${({ hideOnMobile }) => hideOnMobile && 'display: none;'}
+  }
 `;
 
 const Logo = styled(logoImg)`
@@ -52,16 +69,16 @@ const Logo = styled(logoImg)`
 
 const Link = styled(NavLink)`
   text-decoration: none;
-  padding: 0 32px;
+  padding: 0 10px;
   color: #ffff;
-  :hover{
-    color: #0061DF;
-    text-shadow:  1px 1px 6px blue;
+  :hover {
+    color: #0061df;
+    text-shadow: 1px 1px 6px blue;
     transition: 0.6s;
   }
 `;
+
 const Menu = styled.div`
-  width: 177px;
   display: flex;
   flex-direction: column;
   background: #ffffff;
@@ -73,7 +90,7 @@ const Menu = styled.div`
 `;
 
 Menu.Item = styled.div`
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -81,5 +98,6 @@ Menu.Item = styled.div`
   cursor: pointer;
   color: #000000;
 `;
+
 
 export { Container, Wrapper, Section, Logo, Link, Main, Menu };

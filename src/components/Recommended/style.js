@@ -5,13 +5,17 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   margin: auto;
-  padding: 96px 130px;
+  padding: 96px 50px;
   max-width: 1440px;
   width: 100%;
-  :hover{
+
+  @media screen and (max-width: 768px) {
+    padding: 48px 20px;
+  }
+
+  :hover {
     cursor: pointer;
   }
-  /* margin-top: 6px; */
 `;
 
 const Content = styled.div`
@@ -19,7 +23,6 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
-
+`;
 
 export { Container, Content };

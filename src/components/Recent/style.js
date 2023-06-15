@@ -8,10 +8,17 @@ const Container = styled.div`
   padding: 0px 130px;
   max-width: 1440px;
   width: 100%;
-  :hover{
+  :hover {
     cursor: pointer;
   }
-  margin-top: 1px;
+
+  @media (max-width: 1200px) {
+    padding: 0px 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 16px;
+  }
 `;
 
 const Content = styled.div`
@@ -19,7 +26,10 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
 
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
+`;
 
 export { Container, Content };

@@ -61,7 +61,7 @@ export const Home = () => {
               );
             })}
           </Section>
-          <Section>
+          <Section className='center'>
             {token ? (
               <Dropdown
                 overlay={menu}

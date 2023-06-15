@@ -4,7 +4,7 @@ import HouseCard from '../HouseCard';
 import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom';
 
-const { REACT_APP_BASE_URL: url } = process.env;
+// const { REACT_APP_BASE_URL: url } = process.env;
 
 const settings = {
   className: 'center',
@@ -15,22 +15,34 @@ const settings = {
   speed: 700,
   arrows: true,
   adaptiveHeight: false,
-  // dots: true,
-
-  appendDots: (dots) => <h1> {dots} </h1>,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+  ],
 };
 
 export const Recommended = () => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch(`${url}/houses/list`)
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res?.data || []);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch(`${url}/houses/list`)
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       setData(res?.data || []);
+  //     });
+  // }, []);
 
   return (
     <Container>
@@ -39,16 +51,6 @@ export const Recommended = () => {
         <span className="info">Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</span>
       </Content>
       <Slider {...settings}>
-        {/* {data.map((value) => {
-          return (
-            <HouseCard
-              gap={20}
-              key={value.id}
-              onClick={() => navigate(`/properties/${value.id}`)}
-              data={value}
-            />
-          );
-        })} */}
         <HouseCard gap={20} />
         <HouseCard gap={20} />
         <HouseCard gap={20} />
@@ -61,3 +63,15 @@ export const Recommended = () => {
 };
 
 export default Recommended;
+
+
+{/* {data.map((value) => {
+  return (
+    <HouseCard
+      gap={20}
+      key={value.id}
+      onClick={() => navigate(`/properties/${value.id}`)}
+      data={value}
+    />
+  );
+})} */}

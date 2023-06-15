@@ -1,9 +1,6 @@
 import React from 'react';
 import { Container, Content, Wrapper, Icon } from './style';
 
-
-
-
 export const Why = () => {
   return (
     <Container>
@@ -19,7 +16,7 @@ export const Why = () => {
         </Content>
         <Content>
           <Icon.House />
-          <div className="subTitle">Wide Renge Of Properties</div>
+          <div className="subTitle">Wide Range Of Properties</div>
           <div className="info">With over 2 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</div>
         </Content>
         <Content>

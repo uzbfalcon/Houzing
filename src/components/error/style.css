@@ -12,6 +12,7 @@
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     color: red;
+    text-align: center;
     font-size: 23px;
     text-shadow: 1px 1px 4px  red;
     letter-spacing: 1px;

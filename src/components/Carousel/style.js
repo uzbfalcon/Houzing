@@ -18,14 +18,25 @@ const Arrow = styled(arrow)`
   left: ${({ left }) => !left && '20px'};
   right: ${({ left }) => left && '20px'};
   cursor: pointer;
+
   :hover {
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0px 0px 10px 1px var(--colorPrimary);
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
   }
 `;
 
 const Img = styled.img`
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
 `;
 
 const Blur = styled.div`
@@ -48,6 +59,10 @@ const Content = styled.div`
   color: white;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 Content.Title = styled.h1`
@@ -56,31 +71,45 @@ Content.Title = styled.h1`
   font-weight: 700;
   font-size: 44px;
   line-height: 48px;
-  /* identical to box height, or 109% */
   letter-spacing: -0.02em;
   color: #ffffff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
 `;
 
 Content.Desc = styled.div`
-  /* Paragraph/Medium/Regular */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   color: #ffffff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
 `;
 
 Content.Price = styled.div`
-  /* Heading/H4/Semibold/Desktop */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
-  /* identical to box height, or 129% */
   letter-spacing: -0.02em;
   color: #ffffff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
 `;
+
 export { Container, Arrow, Img, Blur, Content };

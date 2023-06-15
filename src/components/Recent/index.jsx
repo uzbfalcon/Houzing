@@ -16,22 +16,28 @@ const settings = {
   arrows: true,
   adaptiveHeight: false,
   dots: false,
-
-  appendDots: (dots) => <h1> {dots} </h1>,
-
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+      },
+    },
+  ],
+  // appendDots: (dots) => <h1> {dots} </h1>,
 };
 
 export const Recommended = () => {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch(`${url}/houses/list`)
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res?.data || []);
-      });
-  }, []);
 
   return (
     <Container>
@@ -40,6 +46,29 @@ export const Recommended = () => {
         <span className="info">Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.</span>
       </Content>
       <Slider {...settings}>
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+        <HouseCard gap={20} />
+      </Slider>
+    </Container>
+  );
+};
+
+export default Recommended;
+
+
+  // useEffect(() => {
+  //   fetch(`${url}/houses/list`)
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       setData(res?.data || []);
+  //     });
+  // }, []);
+
         {/* {data.map((value) => {
           return (
             <HouseCard
@@ -50,16 +79,3 @@ export const Recommended = () => {
             />
           );
         })} */}
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-        <HouseCard gap={20}/>
-      </Slider>
-    </Container>
-  );
-};
-
-export default Recommended;

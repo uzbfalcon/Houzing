@@ -35,11 +35,6 @@ export const Properties = () => {
       Nulla quis curabitur velit volutpat auctor bibendum consectetur sit.
       </div>
       <Container>
-        {/* {data.map((value) => {
-          return <HouseCard onClick={() => onSelect(value.id)}
-            key={value.id}
-            data={value} />;
-        })} */}
         <HouseCard/>
         <HouseCard/>
         <HouseCard/>
@@ -85,3 +80,8 @@ export const Properties = () => {
 };
 
 export default Properties;
+{/* {data.map((value) => {
+  return <HouseCard onClick={() => onSelect(value.id)}
+    key={value.id}
+    data={value} />;
+})} */}
